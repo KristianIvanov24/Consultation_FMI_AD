@@ -6,6 +6,7 @@ phone = {1: '', 11: '', 111: '', 2: 'A', 22: 'B', 222: 'C', 3: 'D', 33: 'E', 333
 
 text = ''
 number = nums[0]
+
 for i in range(1, len(nums)):
     if nums[i] == -1:
         text += phone[number]
@@ -18,5 +19,4 @@ for i in range(1, len(nums)):
         number = nums[i]
 
 text += phone[number]
-
 print(text)
